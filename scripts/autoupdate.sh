@@ -68,8 +68,8 @@ cd /tmp/upg
 umount /mnt/img
 
 sleep 5
-#umount ${lodev}p1
-#umount ${lodev}p2
+umount ${lodev}p1
+umount ${lodev}p2
 e2fsck -yf ${lodev}p2 || true
 resize2fs ${lodev}p2
 
